@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦌</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f8fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e88e5, #0d47a1);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 150, 0.1);
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        
+        .author {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            gap: 30px;
+        }
+        
+        .announcement-section {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #0d47a1;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e3f2fd;
+        }
+        
+        .announcement-box {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 150, 0.08);
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .announcement-box:hover {
+            transform: translateY(-5px);
+        }
+        
+        .announcement-title {
+            font-size: 1.3rem;
+            color: #1565c0;
+            margin-bottom: 10px;
+        }
+        
+        .announcement-date {
+            color: #78909c;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .navigation-section {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .navigation-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .nav-btn {
+            background: white;
+            border: none;
+            border-radius: 8px;
+            padding: 18px 15px;
+            text-align: center;
+            color: #1565c0;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 150, 0.08);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .nav-btn:hover {
+            background: #1e88e5;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 150, 0.15);
+        }
+        
+        .nav-btn i {
+            font-size: 1.2rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            color: #546e7a;
+            border-top: 1px solid #e3f2fd;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">常年混迹91🦌多了之后写出来的网站</h1>
+            <p class="author">作者: ALudic</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <section class="announcement-section">
+                <h2 class="section-title">道观日记</h2>
+                
+                <div class="announcement-box">
+                    <h3 class="announcement-title">网站建立</h3>
+                    <p class="announcement-date">发布日期: 2025年10月15日</p>
+                    <p>用deepsuck把这个网站写好了</p>
+                </div>
+                
+                <div class="announcement-box">
+                    <h3 class="announcement-title">谁的一辈子</h3>
+                    <p class="announcement-date">发布日期: 2025年10月15日</p>
+                    <p>在洛谷上做出来了一道入门题，谁的一辈子</p>
+                </div>
+            </section>
+            
+            <section class="navigation-section">
+                <h2 class="section-title">常去的道观地址</h2>
+                
+                <div class="navigation-buttons">
+                    <a href="https://github.com/AL-sama0" class=nav-btn target = "_blank">
+                        💻  ALudic的GitHub主页
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 9191 ALudic. 保留所有道观权利</p>
+            <p>鲁多了写的网站 | 专注于用户道观体验</p>
+        </div>
+    </footer>
+</body>
+</html>
